@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="head.css">
+</head>
+<body>
+	<div>
+		<ul class="fl letf-contain">
+			<li class="dropdown">
+				<div class="dropdown-ul">
+					送至：<span class="aim">北京</span>
+				</div>
+				<div class="dropdown-panel">
+					<div class="dropdown-list"><a class="aim-choose" href="#">北京</a></div>
+					<div class="dropdown-list"><a class="aim-choose" href="#">吉林</a></div>
+					<div class="dropdown-list"><a class="aim-choose" href="#">天津</a></div>
+				</div>
+			</li>
+		</ul>
+
+		<ul class="fr">
+			<li></li>|
+			<li></li>|
+			<li></li>|
+			<li></li>|
+			<li></li>|
+			<li></li>|
+			<li></li>|
+			<li></li>|
+			<li></li>
+
+		</ul>
+	</div>
+	<script type="text/javascript" src="jquery-2.0.3.js"></script>
+	<script type="text/javascript">
+		$(".dropdown").mouseover(function(event) {
+			/* Act on the event */
+			$(".dropdown-panel").css("display","block");
+		});
+		$(".dropdown").mouseout(function(event) {
+			/* Act on the event */
+			$(".dropdown-panel").css("display","none");
+		});
+		$(".aim-choose").click(function(event) {
+			/* Act on the event */
+			var temp=$(this).text();
+			$(".aim").text(temp);
+		});
+	</script>
+</body>
+
+</html>
