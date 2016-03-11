@@ -1,0 +1,27 @@
+a{
+	text-decoration: none;
+}
+.dropdown-panel{
+	border:1px solid #555;
+	height:50px;
+	width: 150px;
+	display: none;
+	margin-top: -1px;
+}
+.dropdown-list{
+	display: inline;
+	float: left;
+	padding-right: 5px;
+
+}
+.letf-contain{
+	padding-left: 50px;
+}
+.dropdown-ul{
+	border-left:1px solid #555;
+	border-right:1px solid #555;
+	border-bottom: 1px solid #fff;
+	width: 90px;
+	position: relative;
+	z-index: 2;
+}
